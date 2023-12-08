@@ -1,0 +1,5 @@
+# 测试子项目
+
+set(CMAKE_CXX_STANDARD 20)
+
+file(GLOB SONIC_TEST_FILES "${PROJECT_SOURCE_DIR}/test/*.cpp" "${PROJECT_SOURCE_DIR}/test/*.h")
