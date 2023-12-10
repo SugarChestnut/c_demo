@@ -30,5 +30,7 @@ Color &operator++(Color &c)
         return c = Color::green;
     case Color::green:
         return c = Color::red;
+    default:
+        return c;
     }
 }

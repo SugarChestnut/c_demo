@@ -30,6 +30,8 @@ cmake_minimum_required(VERSION 3.26...3.28)
 # 隐含的定义了 PROJECT_SOURCE_DIR（包含 CMakeLists 文件的目录） 和 PROJECT_BINARY_DIR（项目二进制文件目录） 变量
 project(rtt_base VERSION 1.0.0 LANGUAGES CXX)
 
+message(STATUS "${CMAKE_CURRENT_SOURCE_DIR}")
+
 # 判断当前项目是作为子项目还是独立项目
 set(MAIN_PROJECT OFF)
 if (CMAKE_CURRENT_SOURCE_DIR STREQUAL CMAKE_SOURCE_DIR)
@@ -40,6 +42,7 @@ endif ()
 set(CMAKE_CXX_STANDARD 20)
 # 有些情况下可能不是静态链接，导致运行时找不到库文件，可以使用下面的语句强制静态链接
 set(CMAKE_EXE_LINKER_FLAGS "-static")
+set(EXECUTABLE_OUTPUT_PATH "${PROJECT_SOURCE_DIR}/out")
 
 # 语法：find_package(<name> [major.minor] [QUIET] [NO_MODULE] [[REQUIRED|COMPONENTS] [components...]] [OPTIONAL_COMPONENTS components...] [NO_POLICY_SCOPE])
 # 说明：在本地搜索第三方库，如果找到，就定义一系列变量，REQUIRED 表示必须找到，否则报错
@@ -69,10 +72,6 @@ endif ()
 # 输出编译信息
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
-# 语法：add_definitions(<list of definitions>)
-# 说明：向工程添加预定义的宏，相当于在源文件中添加 #define 宏名
-add_definitions()
-
 # 语法：include_directories([AFTER|BEFORE] [SYSTEM] dir1 [dir2 ...])
 # 说明：增加头文件搜索路径
 include_directories()
@@ -83,15 +82,19 @@ include_directories()
 link_directories()
 #target_link_directories()
 
+# 语法：add_definitions(<list of definitions>)
+# 说明：向工程添加预定义的宏，相当于在源文件中添加 #define 宏名
+add_definitions()
+
 # 语法：aux_source_directory(<dir> <variable>)
-# 说明：在指定目录下查找所有源文件，将结果存进指定变量名
+# 说明：在指定目录下查找所有源文件，将结果存进指定变量名，不包含子目录
 # 等效 set(DIR_SRCS ./src/main.cpp ./xxx.cpp)
 # 等效 file(GLOB DIR_SRCS ./src/*.cpp) --- file 还有许多其他功能
 aux_source_directory(./src DIR_SRCS)
 
 # 语法：add_subdirectory(source_dir [binary_dir] [EXCLUDE_FROM_ALL])
 # 说明：用于添加子项目目录，如果有该命令，会先进入该目录执行 CMakeLists.txt 文件
-add_subdirectory(./src/clazz)
+add_subdirectory(./src/container)
 
 # 语法：add_executable(<name> [WIN32] [MACOSX_BUNDLE] [EXCLUDE_FROM_ALL] source1 source2 ...)
 # 说明：将指定的源文件生成链接文件
@@ -101,4 +104,4 @@ add_executable(${PROJECT_NAME} ${DIR_SRCS})
 
 # 语法：target_link_libraries(<target> [item1] [item2] [...])
 # 说明：将目标文件链接到库文件或可执行文件
-target_link_libraries(${PROJECT_NAME} Contain)
+target_link_libraries(${PROJECT_NAME} container)
