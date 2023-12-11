@@ -1,0 +1,7 @@
+/usr/local/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/x64/ninja -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -G Ninja -S /Users/rentaotao/Study/c++/c_demo -B /Users/rentaotao/Study/c++/c_demo/cmake-build-release-rtt
+-- /Users/rentaotao/Study/c++/c_demo
+-- Could NOT find Boost (missing: Boost_INCLUDE_DIR filesystem system) 
+-- Boost not found
+-- Configuring done (1.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/rentaotao/Study/c++/c_demo/cmake-build-release-rtt

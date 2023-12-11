@@ -28,7 +28,7 @@ cmake_minimum_required(VERSION 3.26...3.28)
 # 说明：指定项目名称，版本，语言
 # 项目名称，保存到 PROJECT_NAME 变量中
 # 隐含的定义了 PROJECT_SOURCE_DIR（包含 CMakeLists 文件的目录） 和 PROJECT_BINARY_DIR（项目二进制文件目录） 变量
-project(rtt_base VERSION 1.0.0 LANGUAGES CXX)
+project(c_demo VERSION 1.0.0 LANGUAGES CXX)
 
 message(STATUS "${CMAKE_CURRENT_SOURCE_DIR}")
 
@@ -41,7 +41,8 @@ endif ()
 # 编译标准
 set(CMAKE_CXX_STANDARD 20)
 # 有些情况下可能不是静态链接，导致运行时找不到库文件，可以使用下面的语句强制静态链接
-set(CMAKE_EXE_LINKER_FLAGS "-static")
+# 在 MAC 环境下，静态链接会导致编译失败，因为 MAC 下的库文件都是动态链接的
+#set(CMAKE_EXE_LINKER_FLAGS "-static")
 set(EXECUTABLE_OUTPUT_PATH "${PROJECT_SOURCE_DIR}/out")
 
 # 语法：find_package(<name> [major.minor] [QUIET] [NO_MODULE] [[REQUIRED|COMPONENTS] [components...]] [OPTIONAL_COMPONENTS components...] [NO_POLICY_SCOPE])
