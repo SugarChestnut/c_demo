@@ -1,5 +1,8 @@
 #include "vector_i.h"
 
+/*
+    函数模版
+*/
 template<typename T>
 VectorI<T>::VectorI() {
     elem_ = new T[DEFAULT_SZ];
@@ -17,6 +20,7 @@ template<typename T>
 VectorI<T>::VectorI(std::initializer_list<T> lst) : elem_{new T[lst.size()]}, sz_{static_cast<int>(lst.size())} {
     std::copy(lst.begin(), lst.end(), elem_);
 }
+
 // 移动构造函数
 template<typename T>
 VectorI<T>::VectorI(VectorI<T> &&v) noexcept : elem_{v.elem_}, sz_{v.sz_} {
@@ -25,12 +29,14 @@ VectorI<T>::VectorI(VectorI<T> &&v) noexcept : elem_{v.elem_}, sz_{v.sz_} {
     v.elem_ = nullptr;
     v.sz_ = 0;
 }
+
 // 拷贝构造函数
 template<typename T>
 VectorI<T>::VectorI(const VectorI &v) : elem_{new double[v.sz_]}, sz_{v.sz_} {
     std::cout << "拷贝构造函数" << std::endl;
     std::copy(v.elem_, v.elem_ + v.sz_, elem_);
 }
+
 // 移动赋值运算符
 template<typename T>
 VectorI<T> &VectorI<T>::operator=(VectorI<T> &&v) noexcept {
@@ -41,6 +47,7 @@ VectorI<T> &VectorI<T>::operator=(VectorI<T> &&v) noexcept {
     v.sz_ = 0;
     return *this;
 }
+
 // 拷贝赋值运算符
 template<typename T>
 VectorI<T> &VectorI<T>::operator=(const VectorI<T> &v) {
