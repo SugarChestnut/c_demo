@@ -25,7 +25,7 @@ public:
 */
 class VectorContainer : public ContainerI {
 private:
-    VectorI v;
+    VectorI<double> v;
 
 public:
     explicit VectorContainer(int s) : v(s) {}

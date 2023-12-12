@@ -51,37 +51,37 @@ build cmake_object_order_depends_target_c_demo: phony || cmake_object_order_depe
 
 build CMakeFiles/c_demo.dir/src/base.cpp.o: CXX_COMPILER__c_demo_unscanned_Release /Users/rentaotao/Study/c++/c_demo/src/base.cpp || cmake_object_order_depends_target_c_demo
   DEP_FILE = CMakeFiles/c_demo.dir/src/base.cpp.o.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  FLAGS = -O3 -DNDEBUG -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/c_demo.dir
   OBJECT_FILE_DIR = CMakeFiles/c_demo.dir/src
 
 build CMakeFiles/c_demo.dir/src/color.cpp.o: CXX_COMPILER__c_demo_unscanned_Release /Users/rentaotao/Study/c++/c_demo/src/color.cpp || cmake_object_order_depends_target_c_demo
   DEP_FILE = CMakeFiles/c_demo.dir/src/color.cpp.o.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  FLAGS = -O3 -DNDEBUG -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/c_demo.dir
   OBJECT_FILE_DIR = CMakeFiles/c_demo.dir/src
 
 build CMakeFiles/c_demo.dir/src/graph_type.cpp.o: CXX_COMPILER__c_demo_unscanned_Release /Users/rentaotao/Study/c++/c_demo/src/graph_type.cpp || cmake_object_order_depends_target_c_demo
   DEP_FILE = CMakeFiles/c_demo.dir/src/graph_type.cpp.o.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  FLAGS = -O3 -DNDEBUG -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/c_demo.dir
   OBJECT_FILE_DIR = CMakeFiles/c_demo.dir/src
 
 build CMakeFiles/c_demo.dir/src/main.cpp.o: CXX_COMPILER__c_demo_unscanned_Release /Users/rentaotao/Study/c++/c_demo/src/main.cpp || cmake_object_order_depends_target_c_demo
   DEP_FILE = CMakeFiles/c_demo.dir/src/main.cpp.o.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  FLAGS = -O3 -DNDEBUG -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/c_demo.dir
   OBJECT_FILE_DIR = CMakeFiles/c_demo.dir/src
 
 build CMakeFiles/c_demo.dir/src/round.cpp.o: CXX_COMPILER__c_demo_unscanned_Release /Users/rentaotao/Study/c++/c_demo/src/round.cpp || cmake_object_order_depends_target_c_demo
   DEP_FILE = CMakeFiles/c_demo.dir/src/round.cpp.o.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  FLAGS = -O3 -DNDEBUG -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/c_demo.dir
   OBJECT_FILE_DIR = CMakeFiles/c_demo.dir/src
 
 build CMakeFiles/c_demo.dir/src/user.cpp.o: CXX_COMPILER__c_demo_unscanned_Release /Users/rentaotao/Study/c++/c_demo/src/user.cpp || cmake_object_order_depends_target_c_demo
   DEP_FILE = CMakeFiles/c_demo.dir/src/user.cpp.o.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  FLAGS = -O3 -DNDEBUG -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/c_demo.dir
   OBJECT_FILE_DIR = CMakeFiles/c_demo.dir/src
 
@@ -94,7 +94,7 @@ build CMakeFiles/c_demo.dir/src/user.cpp.o: CXX_COMPILER__c_demo_unscanned_Relea
 # Link the executable /Users/rentaotao/Study/c++/c_demo/out/c_demo
 
 build /Users/rentaotao/Study/c++/c_demo/out/c_demo: CXX_EXECUTABLE_LINKER__c_demo_Release CMakeFiles/c_demo.dir/src/base.cpp.o CMakeFiles/c_demo.dir/src/color.cpp.o CMakeFiles/c_demo.dir/src/graph_type.cpp.o CMakeFiles/c_demo.dir/src/main.cpp.o CMakeFiles/c_demo.dir/src/round.cpp.o CMakeFiles/c_demo.dir/src/user.cpp.o | /Users/rentaotao/Study/c++/c_demo/out/libcontainer.dylib || /Users/rentaotao/Study/c++/c_demo/out/libcontainer.dylib
-  FLAGS = -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
+  FLAGS = -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1
   LINK_LIBRARIES = -Wl,-rpath,/Users/rentaotao/Study/c++/c_demo/out  /Users/rentaotao/Study/c++/c_demo/out/libcontainer.dylib
   OBJECT_DIR = CMakeFiles/c_demo.dir
   POST_BUILD = :
@@ -143,14 +143,14 @@ build cmake_object_order_depends_target_container: phony || src/container/CMakeF
 build src/container/CMakeFiles/container.dir/container_i.cpp.o: CXX_COMPILER__container_unscanned_Release /Users/rentaotao/Study/c++/c_demo/src/container/container_i.cpp || cmake_object_order_depends_target_container
   DEFINES = -Dcontainer_EXPORTS
   DEP_FILE = src/container/CMakeFiles/container.dir/container_i.cpp.o.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fPIC -fcolor-diagnostics
+  FLAGS = -O3 -DNDEBUG -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fPIC -fcolor-diagnostics
   OBJECT_DIR = src/container/CMakeFiles/container.dir
   OBJECT_FILE_DIR = src/container/CMakeFiles/container.dir
 
 build src/container/CMakeFiles/container.dir/vector_i.cpp.o: CXX_COMPILER__container_unscanned_Release /Users/rentaotao/Study/c++/c_demo/src/container/vector_i.cpp || cmake_object_order_depends_target_container
   DEFINES = -Dcontainer_EXPORTS
   DEP_FILE = src/container/CMakeFiles/container.dir/vector_i.cpp.o.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fPIC -fcolor-diagnostics
+  FLAGS = -O3 -DNDEBUG -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fPIC -fcolor-diagnostics
   OBJECT_DIR = src/container/CMakeFiles/container.dir
   OBJECT_FILE_DIR = src/container/CMakeFiles/container.dir
 
@@ -163,7 +163,7 @@ build src/container/CMakeFiles/container.dir/vector_i.cpp.o: CXX_COMPILER__conta
 # Link the shared library /Users/rentaotao/Study/c++/c_demo/out/libcontainer.dylib
 
 build /Users/rentaotao/Study/c++/c_demo/out/libcontainer.dylib: CXX_SHARED_LIBRARY_LINKER__container_Release src/container/CMakeFiles/container.dir/container_i.cpp.o src/container/CMakeFiles/container.dir/vector_i.cpp.o
-  ARCH_FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
+  ARCH_FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1
   INSTALLNAME_DIR = @rpath/
   LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG
   OBJECT_DIR = src/container/CMakeFiles/container.dir

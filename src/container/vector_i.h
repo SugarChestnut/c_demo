@@ -3,9 +3,10 @@
 
 #include <iostream>
 
+template<typename T>
 class VectorI {
 private:
-    double *elem_;
+    T *elem_;
     int sz_;
     int idx_ = 0;
 
@@ -29,15 +30,15 @@ public:
     */
     explicit VectorI(int sz);
 
-    VectorI(std::initializer_list<double> lst);
+    VectorI(std::initializer_list<T> lst);
 
-    // 禁用拷贝构造函数
+    // 拷贝构造函数
     VectorI(const VectorI &v);
 
     // 移动构造函数
     VectorI(VectorI &&v) noexcept;
 
-    // 禁用拷贝赋值运算符
+    // 拷贝赋值运算符
     VectorI& operator=(const VectorI &v);
 
     // 移动赋值运算符
@@ -46,15 +47,15 @@ public:
     // 析构函数
     ~VectorI();
 
-    double &operator[](int i);
+    T &operator[](int i);
 
     [[nodiscard]] int size() const;
 
-    void push(double d);
+    void push(T d);
 
-    double pop();
+    T pop();
 
-    double get(int i);
+    T get(int i);
 };
 
 #endif
